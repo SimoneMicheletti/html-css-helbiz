@@ -183,7 +183,10 @@ nav .menu {
   border-radius: 12%;
 }
 
-
+#solo-telefono {
+  display: none;
+  text-align: center;
+}
 
 /* REGOLE SEZIONE 3 */
 
@@ -306,10 +309,20 @@ footer .row {
     margin: 15px 0;
   }
 
-
-  /* nav {
+  #section2 [class*="col-"]:nth-child(1),
+  #section2 [class*="col-"]:nth-child(3) {
     display: none;
-  } */
+  }
+
+  #solo-telefono {
+    display: block;
+    margin-top: 30px;
+  }
+
+/* momentaneamente */
+  nav {
+    display: none;
+  }
 
   #monopattino,
   #bicicletta,
