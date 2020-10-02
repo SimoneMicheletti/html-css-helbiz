@@ -36,7 +36,7 @@ header, section {
 }
 
 h1 {
-  margin: 20px 0;
+  padding: 20px 0;
   font-size: 4em;
 }
 
@@ -46,7 +46,7 @@ h2 {
 
 p {
   font-size: 1.5em;
-  margin: 15px 0;
+  padding: 15px 0;
 }
 
 
@@ -89,11 +89,11 @@ nav .menu {
   padding: 15px;
 }
 
-/* .clearfix {
+.clearfix {
   content: "";
   display: table;
   clear: both;
-} */
+}
 
 
 /* REGOLE JUMBOTRON */
@@ -191,23 +191,22 @@ nav .menu {
 /* REGOLE SEZIONE 3 */
 
 #scooter , #half-phone , #city {
-  background-color: lightpink;
-  height: 400px;
+  font-weight: bold;
 }
 
 #scooter {
   margin-bottom: 30px;
+  width: 100%;
   background-image: url(../img/scooter.jpg);
   background-size: cover;
   background-position: center;
 }
 
-#scooter>div {
+#scooter>.testo{
   color: white;
   float: right;
-  height: 60%;
-  width: 30%;
-  margin: 20% 100px;
+  width: 40%;
+  margin: 70px 50px;
 }
 
 #scooter h1 {
@@ -216,10 +215,30 @@ nav .menu {
 
 #half-phone {
   margin-right: 15px;
+  text-align: center;
+  color: white;
+  background-color: #3f5467;
+  padding-top: 20px;
+}
+
+#half-phone img {
+  margin-top: 20px;
+  height: 200px;
+  max-width: 100%;
 }
 
 #city {
   margin-left: 15px;
+  text-align: center;
+  color: white;
+  background-image: url(../img/city.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#city>div {
+  padding-top: 20px;
+  padding-bottom: 220px;
 }
 
 
@@ -332,6 +351,19 @@ footer .row {
     display: block;
     margin-top: 30px;
   }
+
+  #scooter>div {
+    width: 60%;
+    margin: 10% 10%;
+    text-align: right;
+  }
+
+  #scooter>div *,
+  #half-phone>div *,
+  #city>div *  {
+    padding: 0;
+  }
+
 
 /* momentaneamente */
   nav {
