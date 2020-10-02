@@ -247,13 +247,14 @@ nav .menu {
 
 #collage {
   height: 300px;
-  background-color: coral;
+  background-image: url(../img/collage.jpg);
 }
 
 #collage [class*="col-"]{
   height: 150px;
   margin-top: 75px;
   background-color: white;
+  background-size: cover;
 }
 
 
