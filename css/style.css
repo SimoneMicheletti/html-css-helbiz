@@ -24,13 +24,16 @@ nav {
   margin: auto;
 }
 
+header, section {
+  margin-bottom: 30px;
+}
 
 
 /* REGOLE HEADER */
 
 nav .row>div {
   height: 100px;
-  background-color: lightpink;
+  background-color: lightblue;
 }
 
 #jumbotron {
@@ -55,11 +58,11 @@ nav .row>div {
 }
 
 #monopattino {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 #bicicletta {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 
@@ -83,7 +86,7 @@ nav .row>div {
 }
 
 #section2 .row img {
-  width: 70%;
+  width: 150px;
   height: auto;
   background-color: white;
   position: absolute;
@@ -91,6 +94,28 @@ nav .row>div {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 12%;
+}
+
+
+
+/* REGOLE SEZIONE 3 */
+
+#scooter , #half-phone , #city {
+  background-color: lightpink;
+  height: 300px;
+}
+
+#scooter {
+  margin-bottom: 30px;
+}
+
+
+#half-phone {
+  margin-right: 15px;
+}
+
+#city {
+  margin-left: 15px;
 }
 
 
