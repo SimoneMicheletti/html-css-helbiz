@@ -40,6 +40,10 @@ h1 {
   font-size: 4em;
 }
 
+h2 {
+  margin: 15px 0;
+}
+
 p {
   font-size: 1.5em;
   margin: 15px 0;
@@ -95,7 +99,7 @@ nav .menu {
 /* REGOLE JUMBOTRON */
 
 #jumbotron {
-  height: 400px;
+  min-height: 400px;
   margin-top: 70px;
   background-image: url(../img/mare.jpg);
   background-size: cover;
@@ -119,8 +123,9 @@ nav .menu {
 /* REGOLE SEZIONE 1 */
 
 #monopattino , #bicicletta {
-  background-color: lightpink;
-  height: 300px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #fafafa;
 }
 
 #monopattino {
@@ -131,14 +136,20 @@ nav .menu {
   margin-left: 15px;
 }
 
+#section1 img {
+  max-width: 100%;
+}
 
+#section1 a {
+  color: #0f74c8;
+  font-size: 1.2em;
+}
 
 /* REGOLE SEZIONE 2 */
 
 #jumbo-monopattino {
   background-color: lightgreen;
   height: 300px;
-
 }
 
 #section2 [class*="col-"] {
@@ -274,6 +285,17 @@ footer .row {
     width: 100%;
     padding: 0 15px;
   }
+
+  h1 {
+    margin: 10px 0;
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+
 
   /* nav {
     display: none;
