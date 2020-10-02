@@ -135,6 +135,45 @@ nav .row>div {
 
 
 
+/* REGOLE FOOTER */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+}
+
+footer .row {
+  border-bottom: 1px solid grey;
+  margin-bottom: 30px;
+}
+
+.footer-top [class*="col-"] div{
+  background-color: lightpink;
+  height: 200px;
+  border: 1px solid green;
+}
+
+.footer-center [class*="col-"] div{
+  background-color: lightpink;
+  height: 50px;
+  border: 1px solid green;
+}
+
+.store {
+  width: 305px;
+  margin: auto;
+}
+
+#apple-store , #google-play {
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  background-color: red;
+}
+
+
+
 
 /* REGOLE VERSIONE TABLET */
 
@@ -162,6 +201,14 @@ nav .row>div {
   #half-phone,
   #city {
     margin: 0 0 30px;
+  }
+
+  .store {
+    width: 100%;
+  }
+
+  #apple-store , #google-play {
+    width: 49%;
   }
 
 
