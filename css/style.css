@@ -64,6 +64,39 @@ nav .row>div {
 
 
 
+/* REGOLE SEZIONE 2 */
+
+#jumbo-monopattino {
+  background-color: lightgreen;
+  height: 300px;
+
+}
+
+#section2 [class*="col-"] {
+  height: 100px;
+  background-color: lightpink;
+  border: 1px solid black;
+}
+
+#section2 [class*="col-"]:nth-child(2) {
+  position: relative;
+}
+
+#section2 .row img {
+  width: 70%;
+  height: auto;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12%;
+}
+
+
+
+
+/* REGOLE VERSIONE TABLET */
 
 @media all and (min-width: 769px) and (max-width: 992px) {
 
