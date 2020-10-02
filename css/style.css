@@ -99,7 +99,7 @@ nav .menu {
 /* REGOLE JUMBOTRON */
 
 #jumbotron {
-  min-height: 400px;
+  min-height: 500px;
   margin-top: 70px;
   background-image: url(../img/mare.jpg);
   background-size: cover;
@@ -108,7 +108,7 @@ nav .menu {
 
 #jumbotron .row>div{
   height: 200px;
-  margin-top: 100px;
+  margin-top: 150px;
   color: white;
   text-align: center;
 }
@@ -148,14 +148,24 @@ nav .menu {
 /* REGOLE SEZIONE 2 */
 
 #jumbo-monopattino {
-  background-color: lightgreen;
-  height: 300px;
+  background-image: url(../img/anziano.jpg);
+  background-size: cover;
+  background-position: left;
+  height: 350px;
 }
 
 #section2 [class*="col-"] {
-  height: 100px;
-  background-color: lightpink;
-  border: 1px solid black;
+  height: 70px;
+  margin-top: 50px;
+}
+
+#section2 h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#section2 [class*="col-"]:first-child {
+  text-align: right;
 }
 
 #section2 [class*="col-"]:nth-child(2) {
@@ -163,7 +173,7 @@ nav .menu {
 }
 
 #section2 .row img {
-  width: 150px;
+  width: 180px;
   height: auto;
   background-color: white;
   position: absolute;
