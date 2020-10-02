@@ -142,7 +142,27 @@ nav .row>div {
 
   .container-small , .container-large {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 30px;
   }
+
+}
+
+
+
+/* REGOLE VERSIONE SMARTPHONE */
+
+@media all and (max-width: 768px) {
+  .container-small , .container-large {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  #monopattino,
+  #bicicletta,
+  #half-phone,
+  #city {
+    margin: 0 0 30px;
+  }
+
 
 }
