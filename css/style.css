@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-  color: lightblue;
+  color: #0f74c8;
   font-weight: bold;
 }
 
@@ -27,12 +27,17 @@ a:hover {
 }
 
 .container-large {
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
 
 header, section {
   margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.5em;
+  padding: 15px 0;
 }
 
 h1 {
@@ -42,11 +47,64 @@ h1 {
 
 h2 {
   margin: 15px 0;
+  font-size: 3em;
 }
 
-p {
-  font-size: 1.5em;
-  padding: 15px 0;
+h3 {
+  padding: 20px 0;
+  font-size: 2em;
+}
+
+h4 {
+  padding: 20px 0;
+  font-size: 1.8em;
+}
+
+.store {
+  width: 305px;
+  margin: auto;
+}
+
+.apple-store , .google-play {
+  display: inline-block;
+}
+
+.apple-store img , .google-play img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+/* smartphone */
+@media all and (max-width: 768px) {
+
+  .container-small , .container-large {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  h1 {
+    margin: 10px 0;
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+
+}
+
+@media all and (max-width: 300px) {
+
+  .store {
+    width: 100%;
+  }
+
+  .apple-store , .google-play {
+  width: 49%;
+  }
+
 }
 
 
@@ -60,6 +118,7 @@ nav {
   font-size: 0.8em;
   background-color: white;
   height: 70px;
+  z-index: 900;
 }
 
 nav .row>div {
@@ -94,6 +153,39 @@ nav .menu {
   display: table;
   clear: both;
 }
+
+/* tablet */
+@media all and (min-width: 769px) and (max-width: 992px) {
+
+  .container-small , .container-large {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .menu.language {
+    display: none;
+  }
+
+  .menu.globe {
+    display: inline-block;
+  }
+
+  .menu.globe:hover .sottomenu {
+    display: block;
+  }
+
+}
+
+/* smartphone */
+@media all and (max-width: 768px) {
+
+  /* momentaneamente */
+  nav {
+    display: none;
+  }
+
+}
+
 
 
 /* REGOLE JUMBOTRON */
@@ -137,7 +229,7 @@ nav .menu {
 }
 
 #section1 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 #section1 a {
@@ -145,13 +237,15 @@ nav .menu {
   font-size: 1.2em;
 }
 
+
+
 /* REGOLE SEZIONE 2 */
 
 #jumbo-monopattino {
   background-image: url(../img/anziano.jpg);
   background-size: cover;
   background-position: left;
-  height: 350px;
+  height: 400px;
 }
 
 #section2 [class*="col-"] {
@@ -159,9 +253,9 @@ nav .menu {
   margin-top: 50px;
 }
 
-#section2 h2 {
-  font-size: 20px;
+#section2 h3 , #section2 h4 , #section2 p {
   margin: 0;
+  padding: 0;
 }
 
 #section2 [class*="col-"]:first-child {
@@ -183,10 +277,27 @@ nav .menu {
   border-radius: 12%;
 }
 
-#solo-telefono {
+#section2-solo-telefono {
   display: none;
   text-align: center;
 }
+
+/* smartphone */
+@media all and (max-width: 768px) {
+
+  #section2 [class*="col-"]:nth-child(1),
+  #section2 [class*="col-"]:nth-child(3) {
+    display: none;
+  }
+
+  #section2-solo-telefono {
+    display: block;
+    margin-top: 30px;
+  }
+
+}
+
+
 
 /* REGOLE SEZIONE 3 */
 
@@ -200,6 +311,7 @@ nav .menu {
   background-image: url(../img/scooter.jpg);
   background-size: cover;
   background-position: center;
+  min-height: 400px;
 }
 
 #scooter>.testo{
@@ -219,6 +331,7 @@ nav .menu {
   color: white;
   background-color: #3f5467;
   padding-top: 20px;
+  position: relative;
 }
 
 #half-phone img {
@@ -241,6 +354,46 @@ nav .menu {
   padding-bottom: 220px;
 }
 
+/* smartphone */
+@media all and (max-width: 768px) {
+
+  #scooter>div {
+    width: 60%;
+    margin: 10% 10%;
+    text-align: right;
+  }
+
+  #scooter>div *,
+  #half-phone>div *,
+  #city>div *  {
+    padding: 0;
+  }
+
+  #monopattino,
+  #bicicletta,
+  #half-phone,
+  #city {
+    margin: 0 0 30px;
+  }
+
+  #half-phone , #city {
+    height: 380px
+  }
+
+  #half-phone {
+    position: relative;
+  }
+
+  #half-phone img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+}
+
 
 
 /* REGOLE SEZIONE 4 */
@@ -255,6 +408,29 @@ nav .menu {
   margin-top: 75px;
   background-color: white;
   background-size: cover;
+  position: relative;
+}
+
+.centratura {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.centratura a:nth-child(1),
+.centratura a:nth-child(2),
+.centratura a:nth-child(3) {
+  padding-right: 15px;
+}
+
+
+@media all and (max-width:300px) {
+  .centratura {
+    font-size: 1rem;
+  }
 }
 
 
@@ -265,6 +441,11 @@ footer {
   background-color: black;
   color: white;
   padding: 50px 0;
+  font-size: 1.2rem;
+}
+
+footer img {
+  width: 60%;
 }
 
 footer .row {
@@ -272,119 +453,38 @@ footer .row {
   margin-bottom: 30px;
 }
 
-.footer-top [class*="col-"] div{
-  background-color: lightpink;
-  height: 200px;
-  border: 1px solid green;
+footer ul {
+  list-style: none;
 }
 
-.footer-center [class*="col-"] div{
-  background-color: lightpink;
-  height: 50px;
-  border: 1px solid green;
+footer li:first-child {
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
-.store {
-  width: 305px;
-  margin: auto;
+footer li>a {
+  color: grey;
+  line-height: 1.8;
 }
 
-.apple-store , .google-play {
-  display: inline-block;
-  height: 50px;
-  width: 150px;
-  background-color: red;
+.footer-center {
+  font-size: 0.9rem;
+  line-height: 2;
 }
 
-
-
-
-/* REGOLE VERSIONE TABLET */
-
-@media all and (min-width: 769px) and (max-width: 992px) {
-
-  .container-small , .container-large {
-    width: 100%;
-    padding: 0 30px;
-  }
-
-  .menu.language {
-    display: none;
-  }
-
-  .menu.globe {
-    display: inline-block;
-  }
-
-  .menu.globe:hover .sottomenu {
-    display: block;
-  }
-
+footer i {
+  font-size: 1.4rem;
 }
 
 
+.footer-center>div:first-child a {
+  padding-right: 10px;
+}
 
-/* REGOLE VERSIONE SMARTPHONE */
+.footer-top [class*="col-"] {
+  margin-bottom: 30px;
+}
 
-@media all and (max-width: 768px) {
-
-  .container-small , .container-large {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  h1 {
-    margin: 10px 0;
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 1.2em;
-    margin: 15px 0;
-  }
-
-  #section2 [class*="col-"]:nth-child(1),
-  #section2 [class*="col-"]:nth-child(3) {
-    display: none;
-  }
-
-  #solo-telefono {
-    display: block;
-    margin-top: 30px;
-  }
-
-  #scooter>div {
-    width: 60%;
-    margin: 10% 10%;
-    text-align: right;
-  }
-
-  #scooter>div *,
-  #half-phone>div *,
-  #city>div *  {
-    padding: 0;
-  }
-
-
-/* momentaneamente */
-  nav {
-    display: none;
-  }
-
-  #monopattino,
-  #bicicletta,
-  #half-phone,
-  #city {
-    margin: 0 0 30px;
-  }
-
-  .store {
-    width: 100%;
-  }
-
-  .apple-store , .google-play {
-    width: 49%;
-  }
-
-
+.footer-center [class*="col-"] {
+  padding-bottom: 30px;
 }
