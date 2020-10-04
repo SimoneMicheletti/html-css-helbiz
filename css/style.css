@@ -77,7 +77,6 @@ h4 {
 
 .apple-store img , .google-play img {
   width: 100%;
-  height: auto;
   border-radius: 7px;
 }
 
@@ -256,9 +255,9 @@ nav img {
 #jumbotron {
   min-height: 500px;
   margin-top: 70px;
-  background-image: url(../img/mare.jpg);
+  background-image: url(../img/helbiz-jumbo.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
 #jumbotron .row>div{
@@ -269,7 +268,7 @@ nav img {
 }
 
 .layover {
-  height: 100%;
+  height: 500px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -392,21 +391,28 @@ nav img {
 }
 
 #half-phone {
+  height: 420px;
   margin-right: 15px;
   text-align: center;
   color: white;
+  background-image: linear-gradient(#405569 , #252f38);
   background-color: #3f5467;
   padding-top: 20px;
   position: relative;
 }
 
 #half-phone img {
-  margin-top: 20px;
   height: 200px;
   max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+
 #city {
+  height: 420px;
   margin-left: 15px;
   text-align: center;
   color: white;
@@ -417,7 +423,6 @@ nav img {
 
 #city>div {
   padding-top: 20px;
-  padding-bottom: 220px;
 }
 
 /* smartphone */
@@ -445,18 +450,6 @@ nav img {
   #half-phone , #city {
     height: 380px
   }
-
-  #half-phone {
-    position: relative;
-  }
-
-  #half-phone img {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
 
 }
 
